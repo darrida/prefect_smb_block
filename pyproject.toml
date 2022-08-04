@@ -1,7 +1,7 @@
 [tool.poetry]
 name = "prefect_smb_block"
 version = "2022.08.04"
-description = "required"
+description = "WIP for Prefect SMB Storage Block"
 authors = [
     "darrida <darrida.py@gmail.com>",
 ]
