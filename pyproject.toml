@@ -1,0 +1,47 @@
+[tool.poetry]
+name = "prefect_smb_block"
+version = "2022.08.04"
+description = "required"
+authors = [
+    "darrida <darrida.py@gmail.com>",
+]
+repository = "https://github.com/darrida/prefect_smb_block"
+
+[tool.poetry.dependencies]
+python = "^3.8"
+tomli = "^2.0.0"
+prefect-email = "^0.2.0"
+prefect = "^2.0.2"
+smbprotocol = "^1.9.0"
+
+[tool.poetry.dev-dependencies]
+win32-setctime = "^1.1.0"
+pywin32 = "^303"
+pytest = "^6.2.5"
+isort = "^5.0.0"
+python-gitlab = "^3.0.0"
+black = "^22.0.0"
+tomli-w = "^1.0.0"
+
+[[tool.poetry.source]]
+name = "pypi-public"
+url = "https://pypi.org/simple/"
+default = true
+
+[tool.black]
+line-length = 120
+
+[tool.pylint."MESSAGES CONTROL"]
+max-line-length = 120
+line-length = 120
+disable = [
+    "C0330",
+    "C0103",
+    "W1514",
+]
+
+[build-system]
+requires = [
+    "poetry-core>=1.0.0",
+]
+build-backend = "poetry.core.masonry.api"
