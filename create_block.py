@@ -1,6 +1,10 @@
 from prefect.filesystems import RemoteFileSystem
 from smb_block import SMB
 
+
+# had to create a share on a Windows computer on the network, with a read/write user
+
+
 # have to comment out "overwrite=True" on line 298
 # poetry run prefect deployment build test_flow.py:test_smb -sb remote-file-system/test-smb --name smb-test
 smb = RemoteFileSystem(
