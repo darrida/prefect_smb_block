@@ -1,5 +1,6 @@
 from prefect.filesystems import RemoteFileSystem
 from smb_block import SMB
+# from prefect.filesystems import SMB
 
 
 # had to create a share on a Windows computer on the network, with a read/write user
@@ -27,10 +28,3 @@ smb = SMB(
     smb_access_password='<password>',
 )
 smb.save("test-smb", overwrite=True)
-
-
-# docker run -it -v/var/www:/share/web -p 444:445 -e sharename=web -e password=1234578 ahmetozer/samba
-# useradd
-# web
-# new
-# reload-samba

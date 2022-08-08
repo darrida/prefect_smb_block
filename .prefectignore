@@ -4,6 +4,8 @@ __pycache__
 smbprotocol_transport.py
 prefect_filesystems.py
 pyproject.toml
+poetry.lock
+create_block.py
 
 # python artifacts
 __pycache__/
